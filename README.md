@@ -41,15 +41,12 @@ modules and a scratch image).
 
 ### Keys
 
-The most complex (and arbitrary) requirement is the keys volume, referenced
-as `LOCAL_SECRETS_PATH`.
-
-In order to build it, one needs to run two pieces of software, one to create
-v2 keys and one to create v3 keys – google will help you.
-
-Once you run either of them (you need to run both) you'll have for each a
-folder containing a few files (`hostname`, `private_key`, ...). You need to
-move said folder into `LOCAL_SECRETS_PATH` as `v2` and `v3`.
+You should run one of those programs that generate `.onion` URLs (e.g.
+[this](https://github.com/cathugger/mkp224o)) and then put some of the
+resulting directories (e.g. one v2 and one v3 URL) inside
+`LOCAL_SECRETS_PATH` so that each of `LOCAL_SECRETS_PATH`'s subdirectories
+contains each site's keys and hostname. The script is somehow intelligent
+and just scans the directories and fills the suitable files for you.
 
 You will also need to set restrictive permissions to those directories and
 their files (700 should be fine).
@@ -62,3 +59,6 @@ their files (700 should be fine).
 * All the images are tiny since they're based on Alpine.
 * As you can notice, this doesn't expose any ports. Obviously, because
   that's not how Tor works.
+* Wait, are you saying that potentially any backend app serving anything
+  on port `BACKEND_PORT` works fine and this has nothing to do with `golang``
+  at all? That's right.

@@ -6,7 +6,6 @@ DataDirectory /tmp/tor
 Log notice stdout
 
 HiddenServiceDir /tor/v3/
-HiddenServiceVersion 3
 HiddenServicePort 80 proxy:10080
 
 HiddenServiceDir /tor/v2/
