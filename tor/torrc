@@ -1,0 +1,13 @@
+SOCKSPort 0
+SOCKSPolicy reject *
+ExitRelay 0
+
+DataDirectory /tmp/tor
+Log notice stdout
+
+HiddenServiceDir /tor/v3/
+HiddenServiceVersion 3
+HiddenServicePort 80 proxy:10080
+
+HiddenServiceDir /tor/v2/
+HiddenServicePort 80 proxy:10081
