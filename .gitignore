@@ -1,0 +1,4 @@
+.vscode
+env.sh
+*~
+.DS_Store

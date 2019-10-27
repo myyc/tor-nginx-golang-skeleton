@@ -56,7 +56,7 @@ their files (700 should be fine).
 
 ### Notes
 
-* Everything in the `tor` container runs as root and LOCAL_SECRETS_PATH is
+* Everything in the `tor` container runs as root and `LOCAL_SECRETS_PATH` is
   expected to be owned by `root`. You might be opinionated on whether this
   is a good idea.
 * All the images are tiny since they're based on Alpine.

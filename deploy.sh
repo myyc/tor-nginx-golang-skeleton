@@ -14,7 +14,7 @@ TOR_V3_HOSTNAME=`sudo cat ${LOCAL_SECRETS_PATH}/v3/hostname`
 autoload colors; colors
 
 echo "Cleaning up. 🧹"
-rm nginx.conf docker-compose.yml
+rm -rf nginx.conf docker-compose.yml
 
 print_done() {
     echo $fg[green] "done"$reset_color
@@ -38,4 +38,4 @@ cat templates/docker-compose-template.yml | \
     > docker-compose.yml
 print_done
 
-docker-compose up
+docker-compose up --build
