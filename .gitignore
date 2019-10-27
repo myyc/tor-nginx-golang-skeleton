@@ -2,4 +2,9 @@
 env.sh
 *~
 .DS_Store
-sites-available/
+
+# generated files
+nginx/conf.d
+nginx/nginx.conf
+docker-compose.yml
+tor/torrc

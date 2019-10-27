@@ -19,7 +19,7 @@ fi
 source env.sh
 
 echo "Cleaning up. 🧹"
-rm -rf nginx.conf docker-compose.yml nginx/conf.d tor/torrc
+rm -rf docker-compose.yml nginx/nginx.conf nginx/conf.d tor/torrc
 
 sites=(`sudo find ${LOCAL_SECRETS_PATH}/* -maxdepth 0 -type d`)
 if (( ${#sites} == 0 )); then
