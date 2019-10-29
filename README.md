@@ -60,5 +60,5 @@ their files (700 should be fine).
 * As you can notice, this doesn't expose any ports. Obviously, because
   that's not how Tor works.
 * Wait, are you saying that potentially any backend app serving anything
-  on port `BACKEND_PORT` works fine and this has nothing to do with `golang``
+  on port `BACKEND_PORT` works fine and this has nothing to do with `golang`
   at all? That's right.
