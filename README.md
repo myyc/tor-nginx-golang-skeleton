@@ -7,7 +7,7 @@ containers necessary to run a `golang` webapp on Tor.
 Building
 --------
 
-Look at `env.sh.example`, once you're done run `./deploy.sh`. It **requires**
+Look at `env.sh.example`, once you're done run `./deploy.zsh`. It **requires**
 `zsh` because all the cool kids use `zsh` these days.
 
 It requires a backend app you can run on its own the usual way
